@@ -24,6 +24,7 @@
 }
 
 .nav-links {
+    transition: all 1000ms ease-in-out;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -67,7 +68,7 @@
     font-weight: bold;
     text-align: center;
     font-size: 3rem;
-    padding-top: 12%;
+    padding-top: 30vh;
     letter-spacing: 4px;
     font-family: 'Fraunces', serif;
 }
@@ -105,7 +106,7 @@
 
 .info button {
     border: none;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: 'Fraunces', serif;
     width: 24%;
     min-width: 100px;
@@ -161,7 +162,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 0 15% 5% 15%;
+    padding: 0 10% 10vh 10%;
     align-items: center;
     justify-content: end;
     text-align: center;
@@ -182,11 +183,11 @@
 }
 
 .graphic-design-box p {
-    color: #488377;
+    color: #23564c;
 }
 
 .photography-box p {
-    color: #055379;
+    color: #165774;
 }
 
 .part-3 {
@@ -250,9 +251,19 @@
     color: #b2b2b0;
 }
 
+.footer {
+    height: 100vh;
+}
+
 .four-img-box {
     height: 55vh;
     display: flex;
+}
+
+.two-img-box {
+    display: flex;
+    width: 100%;
+    height: 100%;
 }
 
 .milkbottles {
@@ -273,7 +284,7 @@
 
 .milkbottles, .orange,
 .cone, .sugarcubes {
-    width: 25%;
+    width: 50%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -324,4 +335,260 @@
 
 .social-icons li {
     padding: 40% 0 40% 0;
+}
+
+@media screen and (max-width: 600px)
+{   
+    .header {
+        background-image: url(images/mobile/image-header.jpg);
+    }
+    .egg {
+        background-image: url(images/mobile/image-transform.jpg);
+    }
+    
+    .stand-out-img {
+        background-image: url(images/mobile/image-stand-out.jpg);
+    }
+    
+    .graphic-design-box {
+        background-image: url(images/mobile/image-graphic-design.jpg);
+    }
+    
+    .photography-box {
+        background-image: url(images/mobile/image-photography.jpg);
+    }
+    .milkbottles {
+        background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+    }
+    
+    .orange {
+        background-image: url(images/mobile/image-gallery-orange.jpg);
+    }
+    
+    .cone {
+        background-image: url(images/mobile/image-gallery-cone.jpg);
+    }
+    
+    .sugarcubes {
+        background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+
+    .nav-links {
+        width: 0;
+        overflow: hidden;
+    }
+
+    .part-2 {
+        height: 600vh;
+    }
+    .tarnsform-box {
+        flex-direction: column-reverse;
+    }
+    .standout-box, .img-box {
+        flex-direction: column;
+    }
+
+    .tarnsform-box, .standout-box, .img-box {
+        height: 200vh;
+    }
+
+    .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 10% 0 10%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .info h1 {
+        font-size: 3rem;
+    }
+
+    .info p {
+        font-size: 1.5rem;
+        line-height: 2.1rem;
+    }
+
+    .info button {
+        font-size: 1rem;
+        min-width: 120px;
+    }
+
+    .tarnsform-box .egg, .stand-out-img,
+    .graphic-design-box, .photography-box {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .graphic-design-box, .photography-box {
+        padding: 0 10% 12vh 10%;
+    }
+
+    .graphic-design-box p, .photography-box p {
+        line-height: 2rem;
+    }
+
+    .part-3 {
+        height: 180vh;
+    }
+
+    .client {
+        height: 20vh;
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .client-info {
+        flex-direction: column;
+        height: 160vh;
+        padding: 5% 10% 5% 10%;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .clients {
+        gap: 16px;
+        height: calc(100/3%);
+        width: 100%;
+    }
+
+    .clients img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5%;
+        border-radius: 100px;
+    }
+
+    .clients p, .clients h3, .clients h4 {
+        line-height: 2rem;
+    }
+
+    .clients p {
+        padding: 0 10% 0 10%;
+    }
+
+    .four-img-box {
+        height: 70vh;
+        flex-direction: column;
+    }
+
+    .bottom, .social {
+        height: calc(35vh / 2);
+        gap: 0;
+    }
+
+    .navs li {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width: 477px) {
+    .part-3 {
+        height: 180vh;
+    }
+
+    .client {
+        height: 20vh;
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    .client-info {
+        flex-direction: column;
+        height: 160vh;
+        padding: 0;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .clients {
+        gap: 1%;
+        height: calc(100/3%);
+        width: 100%;
+    }
+
+    .clients img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 5%;
+        border-radius: 100px;
+    }
+
+    .clients p, .clients h3, .clients h4 {
+        line-height: 1.5rem;
+    }
+
+    .clients p {
+        padding: 0 10% 0 10%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    
+    .info {
+        gap: 40px;
+        padding: 0 10% 0 10%;
+    }
+
+    .info h1 {
+        font-size: 2.5rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .info button {
+        font-size: 1rem;
+        min-width: 120px;
+    }
+
+    .graphic-design-box, .photography-box {
+        padding: 0 10% 8vh 10%;
+    }
+
+    .graphic-design-box p, .photography-box p {
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 344px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .part-1 {
+        position: relative;
+    }
+
+    .nav-bar {
+        position: absolute;
+        padding: 0;
+        width: 10%;
+    }
+    .logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom {
+        justify-content: space-between;
+    }
+
+    .bottom h1 {
+        font-size: 2rem;
+    }
+    .navs {
+        flex-direction: column;
+    }
+
+    .navs li {
+        font-size: 1rem;
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
 }
