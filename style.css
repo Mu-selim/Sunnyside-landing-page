@@ -253,8 +253,8 @@ a {
 }
 
 .clients img {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     margin-bottom: 5%;
     border-radius: 100px;
 }
@@ -593,7 +593,7 @@ a {
 
     .clients p {
         padding: 0 15% 0 15%;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .names h3, .names h4 {
