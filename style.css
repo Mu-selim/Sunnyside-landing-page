@@ -30,7 +30,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 32px;
 }
 
 .nav-item {
@@ -357,42 +357,8 @@ a {
     padding: 40% 0 40% 0;
 }
 
-@media screen and (max-width: 600px)
-{   
-    .header {
-        background-image: url(images/mobile/image-header.jpg);
-    }
-    .egg {
-        background-image: url(images/mobile/image-transform.jpg);
-    }
-    
-    .stand-out-img {
-        background-image: url(images/mobile/image-stand-out.jpg);
-    }
-    
-    .graphic-design-box {
-        background-image: url(images/mobile/image-graphic-design.jpg);
-    }
-    
-    .photography-box {
-        background-image: url(images/mobile/image-photography.jpg);
-    }
-    .milkbottles {
-        background-image: url(images/mobile/image-gallery-milkbottles.jpg);
-    }
-    
-    .orange {
-        background-image: url(images/mobile/image-gallery-orange.jpg);
-    }
-    
-    .cone {
-        background-image: url(images/mobile/image-gallery-cone.jpg);
-    }
-    
-    .sugarcubes {
-        background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
-    }
-
+@media screen and (max-width: 700px)
+{
     .hamburger {
         display: block;
     }
@@ -429,6 +395,43 @@ a {
 
     .nav-menu.active {
         left: 0;
+    }
+}
+
+@media screen and (max-width: 600px)
+{   
+    .header {
+        background-image: url(images/mobile/image-header.jpg);
+    }
+    .egg {
+        background-image: url(images/mobile/image-transform.jpg);
+    }
+    
+    .stand-out-img {
+        background-image: url(images/mobile/image-stand-out.jpg);
+    }
+    
+    .graphic-design-box {
+        background-image: url(images/mobile/image-graphic-design.jpg);
+    }
+    
+    .photography-box {
+        background-image: url(images/mobile/image-photography.jpg);
+    }
+    .milkbottles {
+        background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+    }
+    
+    .orange {
+        background-image: url(images/mobile/image-gallery-orange.jpg);
+    }
+    
+    .cone {
+        background-image: url(images/mobile/image-gallery-cone.jpg);
+    }
+    
+    .sugarcubes {
+        background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
     }
 
     .part-2 {
