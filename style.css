@@ -6,57 +6,75 @@
 }
 
 .part-1 {
-    height: 100vh;
-}
-
-.nav-bar {
     background-color: #3EBFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    padding: 6vh 16px 4vh 24px;
-    position: fixed;
 }
 
-.logo {
-    padding: 8px;
-}
-
-.nav-links {
-    transition: all 1000ms ease-in-out;
-    display: flex;
-    justify-content: space-between;
+li {
     list-style: none;
 }
 
-.nav-links li {
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-item {
     transition: all 300ms ease-in-out;
-    padding: 8px;
+    padding: 12px;
     border-radius: 24px;
 }
 
-.nav-links li a {
-    text-decoration: none;
-    color: #ffffff;
-    margin: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.nav-links li:hover {
+.nav-item:hover {
     background-color: #ffffff;
 }
 
-.nav-links li:hover a {
+.nav-item:hover a {
     color: #232d3c;
     font-size: 1rem;
 }
 
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
 .header {
     width: 100%;
-    height: 100vh;
+    height: 92vh;
     background-image: url(images/desktop/image-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -69,7 +87,7 @@
     font-weight: bold;
     text-align: center;
     font-size: 3rem;
-    padding-top: 30vh;
+    padding-top: 20vh;
     letter-spacing: 4px;
     font-family: 'Fraunces', serif;
 }
@@ -375,8 +393,42 @@
         background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
     }
 
-    .nav-links {
-        display: none;
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: 100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #ffffff8c;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-link {
+        color: #555555;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
     }
 
     .part-2 {
@@ -486,7 +538,7 @@
     }
 }
 
-@media (orientation: landscape) /*and (max-width: 800px)*/ {
+@media (orientation: landscape) {
     .nav-bar {
         height: 12vh;
     }
