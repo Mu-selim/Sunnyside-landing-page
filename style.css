@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .part-1 {
@@ -253,6 +254,7 @@
 
 .footer {
     height: 100vh;
+    background-color: #90d4c5;
 }
 
 .four-img-box {
@@ -374,8 +376,7 @@
     }
 
     .nav-links {
-        width: 0;
-        overflow: hidden;
+        display: none;
     }
 
     .part-2 {
@@ -482,6 +483,57 @@
 
     .navs li {
         padding: 25px;
+    }
+}
+
+@media (orientation: landscape) /*and (max-width: 800px)*/ {
+    .nav-bar {
+        height: 12vh;
+    }
+
+    .info {
+        gap: 20px;
+    }
+
+    .info h1 {
+        font-size: 2rem;
+    }
+
+    .info p {
+        font-size: 0.8rem;
+    }
+
+    .graphic-design-box, .photography-box {
+        gap: 15px;
+    }
+
+    .graphic-design-box h2, .photography-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .graphic-design-box p, .photography-box p {
+        font-size: 0.8rem;
+    }
+
+    .client-info {
+        padding: 5%;
+    }
+
+    .clients {
+        gap: 16px;
+    }
+
+    .clients p {
+        padding: 0 15% 0 15%;
+        font-size: 0.8rem;
+    }
+
+    .names h3, .names h4 {
+        font-size: 1rem;
+    }
+
+    .footer {
+        height: 110vh;
     }
 }
 
